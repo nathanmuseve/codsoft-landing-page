@@ -47,7 +47,7 @@ padding: 5% 1rem;
   height: 320px;
   position: relative;
 }
-#home h1, #home p {
+#home p {
   text-align: center;
   color: black;
   font-weight: bolder;
@@ -76,7 +76,7 @@ padding: 5% 1rem;
   position: absolute;
   right: 0;
 }
-#home .left p, .center p, .right p{
+#home .left p, #home .center p, #home .right p{
   margin-top: 40px;
   display: inline-block;
   color: white;
@@ -122,5 +122,38 @@ b {
 /* our services  */
 #services h2 {
   text-align: center;
-  text-decoration: 2px solid underline  #02B3DD;
+  text-decoration: 3px solid underline  #02B3DD;
+}
+#services .display {
+  display: flex;
+  gap: 1rem;
+  margin: 0 6px;
+}
+#services .display .service img {
+  width: 200px;
+  margin: 4px 0;
+}
+.service h3 {
+  color: #02B3DD;
+}
+
+/* contact section  */
+#contact {
+  background-color: #02B3DD;
+  justify-content: center;
+  align-items: center;
+}
+#contact h2 {
+  text-align: center;
+  color: #101035;
+}
+#contact form {
+  width: 50%;
+  margin: 0 auto 2rem auto;
+  background-color: white;
+}
+#contact form  .inputs,  #button .inputs button {
+  width: 100%;
+  padding: 10px;
+  margin: 4px;
 }

@@ -89,3 +89,38 @@ padding: 5% 1rem;
   align-items: center;
   margin:0;
 }
+/* About styles  */
+#about {
+  background-color: #02B3DD;
+  margin: 0;
+}
+#about h2 {
+  text-align: center;
+  font-size: xx-large;
+}
+#about .about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0.3rem;
+}
+b {
+  font-size: 1.5rem;
+  color: #101035;
+}
+#about .mvs {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 1.5rem;
+}
+.mission h3 {
+  color: #101035;
+}
+
+/* our services  */
+#services h2 {
+  text-align: center;
+  text-decoration: 2px solid underline  #02B3DD;
+}

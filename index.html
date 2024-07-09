@@ -7,38 +7,42 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navabar section  -->
+  <!-- Navbar section  -->
   <header class="navbar">
-    <nav >
-      <img src="logo.avif" alt="logo" class="logo" width="200px" >
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Contact</a></li>
+    <nav>
+      <img src="logo.avif" alt="logo" class="logo" width="200px">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      
+      <!-- close and open hamburger  -->
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
   </header>
 
   <!-- The content section  -->
   <main class="container">
-
     <!-- Home  -->
     <section id="home">
-      <!-- round cirlces  -->
-       <div class="circles">
+      <!-- round circles  -->
+      <div class="circles">
         <div class="left">
           <p>We program</p>
         </div>
-  
         <div class="center">
           <p>We Code</p>
         </div>
-  
         <div class="right">
           <p>We Deliver</p>
         </div>
-       </div>
+      </div>
 
       <div class="display">
         <div class="animate">
@@ -58,59 +62,53 @@
 
     <!-- About  -->
     <section id="about">
-      <h2>Get to know us
-      </h2>
-
+      <h2>Get to know us</h2>
       <div class="about-us">
-        <p><b>CodSoft</b> are IT services and IT consultancy  that specializes in creating innovative solutions for businesses.</p>
-
-      <p>At <b>CodSoft</b>, we believe practical knowledge is the key to success in the tech industry.</p>
+        <p><b>CodSoft</b> are IT services and IT consultancy that specializes in creating innovative solutions for businesses.</p>
+        <p>At <b>CodSoft</b>, we believe practical knowledge is the key to success in the tech industry.</p>
       </div>
-
-      <!-- our mission and vission  -->
+      <!-- our mission and vision  -->
       <div class="mvs">
         <div class="mission">
           <h3>Our Mission</h3>
           <p>Our mission is to provide students with the opportunity to gain practical experience in the tech industry</p>
         </div>
-        <div class="mission">
-          <h3>Our vision</h3>
+        <div class="vision">
+          <h3>Our Vision</h3>
           <p>Our vision is to become the leading provider of IT services and IT consultancy in the world </p>
         </div>
       </div>
     </section>
 
-    <!-- our services  -->
+    <!-- Our services  -->
     <section id="services">
-      <h2>We Provide All Exclusive services For Clients</h2>
+      <h2>We Provide All Exclusive Services For Clients</h2>
       <div class="display">
         <div class="service">
           <h3>We build websites and web applications.</h3>
-          <p>No matter how small or large your business, having a website is must have at this time. Having a website help you to maintain your online presence.</p>
+          <p>No matter how small or large your business, having a website is a must-have at this time. Having a website helps you to maintain your online presence.</p>
           <img src="animate.webp" alt="web development">
         </div>
-
         <div class="service">
-          <h3>E-commerce development.</h3  >
+          <h3>E-commerce development.</h3>
           <p>We deliver projects with 100% user satisfaction.</p>
           <p>Our talented web development team has years of experience building websites from small to large.</p>
-          <p> Our talented web development team has years of experience building websites from small to large.</p>
           <img src="ecomace.gif" alt="web development">
         </div>
       </div>
-
-
     </section>
 
     <!-- Contact section  -->
     <section id="contact">
       <h2>Get in touch</h2>
       <form action="">
+        <input type="text" name="name" placeholder="Your Name">
         <input type="email" name="email" placeholder="Your Email">
         <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+        <button type="submit">SEND MESSAGE</button>
       </form>
     </section>
   </main>
+  <script src="scripts.js"></script>
 </body>
 </html>

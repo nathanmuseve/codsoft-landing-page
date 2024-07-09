@@ -42,6 +42,22 @@ padding: 5% 1rem;
   color: white;
 }
 
+/* hamburger close and open menu  */
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  padding: 1rem;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger .bar {
+  top: 0.6rem;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0;
+}
 #home {
   background: rgb(16, 16, 53) url(bg-image.jpg) repeat fixed;
   height: 320px;
@@ -115,7 +131,7 @@ b {
   align-self: center;
   gap: 1.5rem;
 }
-.mission h3 {
+.mission h3, .vision h3  {
   color: #101035;
 }
 
@@ -148,12 +164,152 @@ b {
   color: #101035;
 }
 #contact form {
-  width: 50%;
+  width: 400px;
   margin: 0 auto 2rem auto;
+  padding: 1rem;
   background-color: white;
 }
-#contact form  .inputs,  #button .inputs button {
+form {
+  padding-bottom: 1rem;
+  border-radius: 4px;
+}
+
+form input, form textarea, form button {
+  color: #02B3DD;
+  text-transform: capitalize;
   width: 100%;
   padding: 10px;
   margin: 4px;
+  border: 1px solid #02B3DD;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s, padding .2s;
 }
+
+
+/* Focus state */
+form input:focus, form textarea:focus{
+  border: 1px solid #dd0202;
+  border-radius: 4px;
+  padding: 14px;
+}
+
+/* Typing state */
+input[type="text"].typing,
+textarea.typing, input[type="email"].typing  {
+  border-color: #090779; /* Change to your desired typing color */
+}
+form button:hover {
+  background-color: #02B3DD;
+  color: white;
+  outline: 2px solid #090779;
+  outline-offset: 1px;
+}
+
+/* Media querry  */
+
+@media (min-width: 360px) and (max-width: 600px) {
+  /* Navbar styles  */
+
+  .navbar nav {
+    height: 30px;
+    overflow: hidden;
+  }
+  nav img {
+    width:100px
+  }
+.navbar nav ul {
+  position: absolute;
+  right: 0;
+  top: 0rem;
+  height: 1400px;
+  display: block;
+  gap: 2rem;
+  background-color: rgb(0, 132, 255);
+  padding-top: 2rem;
+  transition: width 0.1s;
+  width: 0;
+}
+.navbar nav ul li  {
+font-size: 24px;
+}
+.navbar nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* hamburger close and open menu  */
+.hamburger {
+  display: block;
+  right: 1rem;
+  top: -0.9rem;
+}
+#home {
+  background: rgb(16, 16, 53) url(bg-image.jpg) repeat fixed;
+  height: auto;
+  position: relative;
+}
+#home p {
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+#home .left, .center, .right {
+  display: none;
+}
+#home .display {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#home img {
+  width: 250px;
+}
+#home p{
+  font-size: 20px;
+}
+
+/* About styles  */
+#about .about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+b {
+  font-size: 1rem;
+  color: #101035;
+}
+#about .mvs {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 1.5rem;
+}
+#about p {
+  padding: 12px;
+}
+#services .display {
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+/* our services  */
+#services h2 {
+  text-decoration: 2px solid underline  #02B3DD;
+}
+
+
+/* contact section  */
+
+#contact form {
+  width: 300px;
+}
+}
+@media (max-width:1200px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+ /* THE END */

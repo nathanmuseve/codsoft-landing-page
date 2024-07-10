@@ -51,13 +51,25 @@ padding: 5% 1rem;
   flex-direction: column;
   cursor: pointer;
 }
-.hamburger .bar {
+.bar1, .bar2, .bar3 {
   top: 0.6rem;
-  width: 30px;
-  height: 5px;
+  width: 35px;
+  height: 6px;
   background-color: white;
   margin: 4px 0;
+  transition: 0.2s;
 }
+ 
+/* toggle the .hamburger  */
+/* .change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+} */
 #home {
   background: rgb(16, 16, 53) url(bg-image.jpg) repeat fixed;
   height: 320px;
@@ -212,11 +224,11 @@ form button:hover {
   /* Navbar styles  */
 
   .navbar nav {
-    height: 30px;
+    height: 46px;
     overflow: hidden;
   }
   nav img {
-    width:100px
+    width:150px;
   }
 .navbar nav ul {
   position: absolute;
@@ -227,11 +239,8 @@ form button:hover {
   gap: 2rem;
   background-color: rgb(0, 132, 255);
   padding-top: 2rem;
-  transition: width 0.1s;
-  width: 0;
-}
-.navbar nav ul li  {
-font-size: 24px;
+  transition: all 0.05s;
+  width: 0%;
 }
 .navbar nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -239,8 +248,7 @@ font-size: 24px;
 /* hamburger close and open menu  */
 .hamburger {
   display: block;
-  right: 1rem;
-  top: -0.9rem;
+  right: 0.5rem;
 }
 #home {
   background: rgb(16, 16, 53) url(bg-image.jpg) repeat fixed;
@@ -304,6 +312,17 @@ b {
 
 #contact form {
   width: 300px;
+}
+
+form button {
+  width: 50%;
+  background-color: #02B3DD;
+  color: white;
+  border: none;
+}
+form button:hover {
+  background-color: #101035;
+  outline: 2px solid #02B3DD;
 }
 }
 @media (max-width:1200px) {
